@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            color: #343a40;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .img-fluid {
+            border: 5px solid #007bff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            margin: 0 auto;
+            display: block;
+        }
+        .container-fluid > .row {
+            margin-bottom: 20px;
+        }
+        h2, h3 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;         /* Lista de datos */
+            padding-left: 0;
+        }
+        ul li {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #email {
+            width: 100%;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid text-center">
+        <h1>Guepardos</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 text-center">
+                <img src="img/guepardo.jpg" alt="Foto de un Guepardo" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-7">
+                <h2>Sabías que...</h2>
+                <p style="text-align: justify;">El guepardo es el mamífero terrestre más rápido del mundo. 
+                    Tiene una capacidad de aceleración que le permite pasar de 0 a 96 kilómetros 
+                    por hora en solo tres segundos. Igualmente, este felino es bastante ágil cuando se mueve a grandes
+                    velocidades y es capaz de hacer giros rápidos e inesperados persiguiendo a su presa. También, 
+                    los machos viven solos o en pequeños grupos, a menudo formados por sus hermanos de camada.
+                    Para saber más de este grandioso animal, puedes visitar la página de 
+                    <a href="https://www.nationalgeographic.es/animales/2017/12/dia-mundial-del-guepardo-21-fotografias-gran-felino">National Geographic</a>.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Datos:</h3>
+                <ul>
+                    <li>Son diurnos, por lo que cazan temprano en la mañana y al final de la tarde. Evitan la tarea durante la noche.</li>
+                    <li>Tienen manchas negras sólidas que componen su pelaje, el cual varía en color desde un tostado claro hasta un dorado intenso.</li>
+                    <li>El cuerpo de un guepardo adulto es esbelto y mide entre 1m y 1.5 mts, sin incluir la cola, que puede medir hasta entre 60 y 84 cm de largo.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Para recibir más información</h3>
+                <form class="text-center">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
